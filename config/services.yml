@@ -1,0 +1,17 @@
+services:
+    hammer663.ViewAllPostsInTopic.listener:
+        class: hammer663\ViewAllPostsInTopic\event\listener
+        arguments:
+            - @auth
+            - @config
+            - @template
+            - @user
+            - @dbal.conn
+            - @ext.manager
+            - @request
+            - @content.visibility
+            - %core.root_path%
+            - %core.php_ext%
+            - @pagination		
+        tags:
+            - { name: event.listener }

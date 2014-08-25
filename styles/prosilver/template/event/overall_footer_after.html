@@ -1,0 +1,42 @@
+<!-- IF S_TOPIC_ALL -->
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+$('.pagination ul li:last-child').after(' <li class="all_post"><a href="{U_TOPIC_ALL}" role="button" rel="next">{L_TOPIC_ALL}</a></li>');
+
+$('.pagination strong:last-child').after(' <a href="./viewtopic.php?f=2&t=1" role="button">Назад</a>');
+/*
+$('.pagination ul').each(function() {
+
+	if($(this).hasClass('.pagination ul'))
+		$(this).html('<li><a href="{U_TOPIC_ALL}" role="button">{L_TOPIC_ALL}</a></li>' + $(this).html());
+		
+	if($(this).hasClass('.pagination'))
+		$(this).html('<a href="./viewtopic.php?f=2&t=1" role="button">Назад</a>' + $(this).html());
+});
+*/
+/*
+$('.previous').before('<li><a href="{U_TOPIC_ALL}" role="button">{L_TOPIC_ALL}</a></li>');
+
+   $('.pagination').after(function(){
+    if($(this).hasClass('previous'))
+        return $('.previous').before('<li><a href="{U_TOPIC_ALL}" role="button">{L_TOPIC_ALL}</a></li>'); 
+   });
+   
+  $('.pagination').after(function(indx){
+    if($(this).html() == '<li class="active">')
+    	return $(this).html('<li><a href="{U_TOPIC_ALL}" role="button">{L_TOPIC_ALL}</a></li>' + $(this).html());
+    else if ($(this).html() == '<li class="next">')
+		return $(this).html('<li><a href="{U_TOPIC_ALL}" role="button">{L_TOPIC_ALL}</a></li>' + $(this).html());
+	else 
+    	return '';
+  });
+*/
+
+
+  
+// ]]>
+</script>
+<!-- ENDIF -->
